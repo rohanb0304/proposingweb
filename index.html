@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A little romantic journey made with love."
+    >
+
+    <title>A Little Something For You 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         FLOATING BACKGROUND
+    ========================================================== -->
+
+    <div class="background-particles" aria-hidden="true"></div>
+    <div class="petals-container" aria-hidden="true"></div>
+    <div class="hearts-container" aria-hidden="true"></div>
+
+    <!-- =========================================================
+         MUSIC
+    ========================================================== -->
+
+    <audio id="backgroundMusic" loop preload="none">
+        <source id="musicSource" src="romantic-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button
+        class="music-button"
+        id="musicButton"
+        type="button"
+        aria-label="Play romantic music"
+        aria-pressed="false"
+        title="Play music"
+    >
+        🎵
+    </button>
+
+    <!-- =========================================================
+         LANDING SCREEN
+    ========================================================== -->
+
+    <section class="landing-screen" id="landingScreen">
+
+        <div class="landing-glow glow-one"></div>
+        <div class="landing-glow glow-two"></div>
+
+        <div class="landing-content">
+
+            <div class="mini-heart" aria-hidden="true">♡</div>
+
+            <p class="eyebrow">A tiny surprise for someone special</p>
+
+            <h1>
+                Hey, <span data-her-name>Yamini</span>... 💗
+            </h1>
+
+            <p class="landing-subtitle">
+                I made something special for you...
+            </p>
+
+            <button
+                class="primary-button heart-button"
+                id="openHeartButton"
+                type="button"
+            >
+                <span>Open My Heart</span>
+                <span aria-hidden="true">💌</span>
+            </button>
+
+            <p class="tap-hint">Take your time... there is no rush. ✨</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         MAIN WEBSITE
+    ========================================================== -->
+
+    <main id="mainContent" class="main-content hidden">
+
+        <!-- =====================================================
+             SECTION 2 — ROMANTIC MESSAGE
+        ====================================================== -->
+
+        <section class="section romantic-section reveal-section" id="message">
+
+            <div class="section-decoration decoration-left">♡</div>
+            <div class="section-decoration decoration-right">✦</div>
+
+            <div class="container narrow-container">
+
+                <span class="section-kicker">A little confession...</span>
+
+                <h2 class="romantic-heading">
+                    Out of all the people in this world,<br>
+                    somehow, my heart found you. ❤️
+                </h2>
+
+                <div class="divider">
+                    <span>♥</span>
+                </div>
+
+                <p
+                    class="romantic-text typewriter-text"
+                    id="romanticText"
+                ></p>
+
+                <div class="scroll-hint">
+                    <span>Keep scrolling</span>
+                    <span class="scroll-arrow">↓</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECTION 3 — WHY YOU
+        ====================================================== -->
+
+        <section class="section why-section reveal-section" id="why-you">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker">There are so many reasons...</span>
+
+                    <h2>Why You? 🥹❤️</h2>
+
+                    <p>
+                        I could probably write a whole book,
+                        but these are some of my favorite reasons.
+                    </p>
+
+                </div>
+
+                <div class="reasons-grid" id="reasonsGrid">
+
+                    <article class="reason-card">
+                        <div class="reason-icon">😊</div>
+                        <h3>Your Smile</h3>
+                        <p>
+                            Somehow your smile has this little way
+                            of making an ordinary moment feel special.
+                        </p>
+                    </article>
+
+                    <article class="reason-card">
+                        <div class="reason-icon">✨</div>
+                        <h3>Your Eyes</h3>
+                        <p>
+                            There is something about them that makes
+                            it surprisingly difficult to look away.
+                        </p>
+                    </article>
+
+                    <article class="reason-card">
+                        <div class="reason-icon">😂</div>
+                        <h3>You Make Me Laugh</h3>
+                        <p>
+                            Even the simplest conversations with you
+                            somehow become my favorite ones.
+                        </p>
+                    </article>
+
+                    <article class="reason-card">
+                        <div class="reason-icon">🌸</div>
+                        <h3>Your Kind Heart</h3>
+                        <p>
+                            The little things you do for people say
+                            more about you than you probably realize.
+                        </p>
+                    </article>
+
+                    <article class="reason-card">
+                        <div class="reason-icon">🥹</div>
+                        <h3>Your Little Habits</h3>
+                        <p>
+                            Those tiny things you probably don't even
+                            notice are some of the things I adore.
+                        </p>
+                    </article>
+
+                    <article class="reason-card featured-reason">
+                        <div class="reason-icon">❤️</div>
+                        <h3>Simply... YOU</h3>
+                        <p>
+                            Maybe I don't need a complicated reason.
+                            I just really, really like being around you.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECTION 4 — OUR LITTLE MOMENTS
+        ====================================================== -->
+
+        <section class="section memories-section reveal-section" id="memories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker">The little things matter</span>
+
+                    <h2>Our Little Moments 💞</h2>
+
+                    <p>
+                        Some moments are small when they happen,
+                        but somehow become huge in our memories.
+                    </p>
+
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">🌸</div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-number">01</span>
+
+                            <h3>The First Time We Met</h3>
+
+                            <p data-memory="firstMeeting">
+                                YOUR MEMORY
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">💬</div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-number">02</span>
+
+                            <h3>The First Time We Talked</h3>
+
+                            <p>
+                                YOUR MEMORY — Replace this sentence
+                                with the story of your first conversation.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">🌙</div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-number">03</span>
+
+                            <h3>That One Conversation I'll Never Forget</h3>
+
+                            <p data-memory="specialMemory">
+                                YOUR MEMORY
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">💗</div>
+
+                        <div class="timeline-card">
+
+                            <span class="timeline-number">04</span>
+
+                            <h3>When I Realized You Were Special</h3>
+
+                            <p>
+                                Maybe it wasn't one particular moment.
+                                Maybe it was all those little moments
+                                slowly adding up.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot">❤️</div>
+
+                        <div class="timeline-card today-card">
+
+                            <span class="timeline-number">05</span>
+
+                            <h3>Today ❤️</h3>
+
+                            <p>
+                                Today, I finally decided to tell you
+                                what my heart has been trying to say.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECTION 5 — PHOTO GALLERY
+        ====================================================== -->
+
+        <section class="section gallery-section reveal-section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-kicker">Little memories frozen in time</span>
+
+                    <h2>Our Memory Wall 📸</h2>
+
+                    <p>
+                        Replace these photos with your own favorite memories.
+                    </p>
+
+                </div>
+
+                <div class="gallery">
+
+                    <button
+                        class="photo-card photo-one"
+                        type="button"
+                        data-image="photo1.jpg"
+                        data-caption="A little moment I'll always remember. ❤️"
+                        aria-label="Open memory photo one"
+                    >
+                        <div class="photo-inner">
+                            <img
+                                src="photo1.jpg"
+                                alt="Our first romantic memory"
+                                loading="lazy"
+                            >
+                            <span class="photo-fallback">📸</span>
+                            <span class="photo-caption">
+                                A little moment ❤️
+                            </span>
+                        </div>
+                    </button>
+
+
+                    <button
+                        class="photo-card photo-two"
+                        type="button"
+                        data-image="photo2.jpg"
+                        data-caption="Some memories deserve their own little frame. 🌸"
+                        aria-label="Open memory photo two"
+                    >
+                        <div class="photo-inner">
+                            <img
+                                src="photo2.jpg"
+                                alt="A special memory together"
+                                loading="lazy"
+                            >
+                            <span class="photo-fallback">🌸</span>
+                            <span class="photo-caption">
+                                One of my favorites 🌸
+                            </span>
+                        </div>
+                    </button>
+
+
+                    <button
+                        class="photo-card photo-three"
+                        type="button"
+                        data-image="photo3.jpg"
+                        data-caption="You make ordinary moments feel extraordinary. ✨"
+                        aria-label="Open memory photo three"
+                    >
+                        <div class="photo-inner">
+                            <img
+                                src="photo3.jpg"
+                                alt="A beautiful memory together"
+                                loading="lazy"
+                            >
+                            <span class="photo-fallback">✨</span>
+                            <span class="photo-caption">
+                                Just us ✨
+                            </span>
+                        </div>
+                    </button>
+
+
+                    <button
+                        class="photo-card photo-four"
+                        type="button"
+                        data-image="photo4.jpg"
+                        data-caption="Here's to all the memories still waiting for us. 💗"
+                        aria-label="Open memory photo four"
+                    >
+                        <div class="photo-inner">
+                            <img
+                                src="photo4.jpg"
+                                alt="A precious memory together"
+                                loading="lazy"
+                            >
+                            <span class="photo-fallback">💗</span>
+                            <span class="photo-caption">
+                                More memories to come 💗
+                            </span>
+                        </div>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECTION 6 — THE BUILD UP
+        ====================================================== -->
+
+        <section class="section buildup-section reveal-section" id="buildup">
+
+            <div class="container narrow-container">
+
+                <span class="section-kicker">Okay... here goes...</span>
+
+                <h2>
+                    There's something I've been wanting to tell you...
+                </h2>
+
+                <div class="message-sequence" id="messageSequence">
+
+                    <div class="sequence-message active">
+                        I've tried finding the perfect words...
+                    </div>
+
+                    <div class="sequence-message">
+                        But I don't think perfect words exist...
+                    </div>
+
+                    <div class="sequence-message">
+                        So I'll just say what's in my heart...
+                    </div>
+
+                    <div class="sequence-message final-sequence-message">
+                        My heart chose you. ❤️
+                    </div>
+
+                </div>
+
+                <div class="sequence-controls">
+
+                    <div
+                        class="sequence-dots"
+                        id="sequenceDots"
+                        aria-label="Message progress"
+                    ></div>
+
+                    <button
+                        class="primary-button"
+                        id="continueButton"
+                        type="button"
+                    >
+                        Continue... 💗
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECTION 7 — BIG QUESTION
+        ====================================================== -->
+
+        <section class="section proposal-section reveal-section" id="proposal">
+
+            <div class="proposal-glow"></div>
+
+            <div class="container proposal-container">
+
+                <div class="proposal-heart" aria-hidden="true">
+                    <span>♥</span>
+                </div>
+
+                <span class="section-kicker">One last thing...</span>
+
+                <h2>
+                    <span data-her-name>HER NAME</span>,
+                    Will You Be Mine? ❤️
+                </h2>
+
+                <p class="proposal-description">
+                    I don't promise that every day will be perfect...
+                    but I promise I'll always try to make your days
+                    a little brighter.
+                </p>
+
+                <div class="proposal-buttons">
+
+                    <button
+                        class="yes-button"
+                        id="yesButton"
+                        type="button"
+                    >
+                        YES ❤️
+                    </button>
+
+                    <button
+                        class="no-button"
+                        id="noButton"
+                        type="button"
+                    >
+                        NO 🙈
+                    </button>
+
+                </div>
+
+                <div
+                    class="answer-message"
+                    id="answerMessage"
+                    role="status"
+                    aria-live="polite"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SECTION 8 — FINAL MESSAGE
+        ====================================================== -->
+
+        <section
+            class="section final-section hidden"
+            id="finalMessage"
+        >
+
+            <div class="final-sparkles" aria-hidden="true"></div>
+
+            <div class="container narrow-container">
+
+                <div class="final-heart" aria-hidden="true">
+                    ❤️
+                </div>
+
+                <span class="section-kicker">
+                    And just like that...
+                </span>
+
+                <h2>
+                    YOU JUST MADE MY HEART THE HAPPIEST. ❤️
+                </h2>
+
+                <div class="divider">
+                    <span>♥</span>
+                </div>
+
+                <p class="final-text">
+                    <span data-her-name>HER NAME</span>,
+                    I don't know exactly what the future looks like,
+                    but I know that I'm really grateful that you're
+                    part of my present.
+
+                    <br><br>
+
+                    Thank you for being you — for the smiles,
+                    the conversations, the silly moments, and all
+                    the little things that somehow became important
+                    to me.
+
+                    <br><br>
+
+                    If you'll let me, I'd love to keep making
+                    beautiful little memories with you. 💗
+                </p>
+
+                <div class="signature">
+
+                    <span>With all my heart,</span>
+
+                    <strong>
+                        <span data-your-name>YOUR NAME</span> ❤️
+                    </strong>
+
+                </div>
+
+                <div class="beating-heart" aria-hidden="true">
+                    ♥
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         LIGHTBOX
+    ========================================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Photo viewer"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            type="button"
+            aria-label="Close photo"
+        >
+            ×
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt=""
+            >
+
+            <p id="lightboxCaption"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         CELEBRATION OVERLAY
+    ========================================================== -->
+
+    <div
+        class="celebration-overlay"
+        id="celebrationOverlay"
+        aria-hidden="true"
+    >
+
+        <div class="celebration-content">
+
+            <div class="celebration-heart">
+                ❤️
+            </div>
+
+            <h2>
+                YAY! 🥹❤️
+            </h2>
+
+            <p>
+                You just made this little corner of the internet
+                incredibly happy.
+            </p>
+
+            <button
+                class="primary-button"
+                id="seeFinalMessageButton"
+                type="button"
+            >
+                One More Thing... 💌
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
